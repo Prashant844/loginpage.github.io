@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap');
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-color:  #296491;
+}
+.main-container
+{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left
+{
+    width: 55%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    clip-path: polygon(0% 0%, 110% 0%, 70% 100%,0% 100%);
+}
+.left > img
+{
+    height: 100vh;
+}
+.right
+{
+    width: 50%;
+    height: 100vh;
+    background-color:  #296491;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right > .overlay
+{
+    position: relative;
+    width: 75%;
+    height: 80vh;
+    border-radius: 2%;
+    /* background-color: #5aaee6; */
+    background-color:#3f82b5;
+    display: flex;
+    justify-content: center;
+    
+}
+.right > .overlay > h1
+{
+    position: relative;
+    color: white;
+    padding-top: 10px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: 'Libre Caslon Display', serif;
+}
+form
+{
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 80vh;
+
+}
+form h3:nth-child(1)
+{
+    position: absolute;
+    top: 18%;
+    left: 10%;
+    color: white;
+    font-size: 1.3rem;
+}
+form #Email
+{
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    width: 80%;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    
+}
+form h3:nth-child(3)
+{
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    color: white;
+}
+form #password
+{
+    position: absolute;
+    top: 42%;
+    left: 10%;
+    width: 80%;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+}
+form h3:nth-child(5)
+{
+    position: absolute;
+    top: 50%;
+    left: 11%;
+    font-size: 0.8rem;
+    color: white;
+}
+form #btn
+{
+    position: absolute;
+    top: 58%;
+    left: 10%;
+    width: 80%;
+    text-align: center;
+    padding: 10px 15px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    background-color: yellow;
+    cursor: pointer;
+}
+form #btn > a
+{
+    text-decoration: none;
+}
+form h3:nth-child(7)
+{
+    position: absolute;
+    top: 72%;
+    left: 40%;
+    color: white;
+}
+form a:nth-child(8) img
+{
+    position: absolute;
+    left: 15%;
+    top: 80%;
+    width: 10%;
+    height: 10%;
+    background-color: white;
+    border-radius: 50%;
+}
+form a:nth-child(8) img:hover
+{
+   transform: scale(1.2);
+}
+form h3:nth-child(9) a
+{
+    position: absolute;
+    left: 15%;
+    top: 92%;
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+}
+form > a:nth-child(10) img
+{
+    position: absolute;
+    left: 45%;
+    top: 80%;
+   width: 10%;
+   height: 10%;
+   background-color: white;
+   border-radius: 50%;
+}
+form a:nth-child(10) img:hover
+{
+   transform: scale(1.2);
+}
+form h3:nth-child(11) a
+{
+    position: absolute;
+    left: 43%;
+    top: 92%;
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+}
+form > a:nth-child(12) img
+{
+    position: absolute;
+    left: 75%;
+    top: 80%;
+    width: 10%;
+    height: 10%;
+    background-color: white;
+    border-radius: 50%;
+}
+form a:nth-child(12) img:hover
+{
+   transform: scale(1.2);
+}
+form h3:nth-child(13) a
+{
+    position: absolute;
+    left: 75%;
+    top: 92%;
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+}
+form h3:nth-child(13) a:hover, h3:nth-child(11) a:hover, h3:nth-child(9) a:hover
+{
+    color: red;
+}
+
+
+/* media query section */
+
+@media screen and (max-width:480px)
+{
+  
+     .main-container
+     {
+         flex-direction: column;
+     }
+      .left
+      {
+          width: 100vw;
+          clip-path: none;
+      }
+     .left > img
+     {
+        position: absolute;
+        top: 0%;
+        width: 100vw;
+        height: 50vh;
+     }
+     .right
+     {
+         width: 100vw;
+         height: 100vh;
+     }
+     .right .overlay
+     {
+         width: 90vw;
+         top: 45%;
+     }
+     .right .overlay h1
+     {
+         font-size:3rem;
+         top: 3%;
+     }
+     form h3:nth-child(1) ,h3:nth-child(3)
+     {
+         font-size: 3rem;
+     }
+     form h3:nth-child(5)
+     {
+         width: 70%;
+         font-size: 1.5rem;
+     }
+     form #Email , #password
+     {
+         font-size: 3rem;
+     }
+     form #btn
+     {
+         font-size: 3rem;
+     }
+     form h3:nth-child(7)
+     {
+         font-size: 2.5rem;
+         left: 35%;
+     }
+     form > a:nth-child(8) img ,form > a:nth-child(10) img ,form > a:nth-child(12) img 
+     {
+         width: 15%;
+         height: 5%;
+     }
+     form h3:nth-child(9) a,form h3:nth-child(11) a,form h3:nth-child(13) a
+     {
+         font-size: 3rem;
+         top: 90%;
+         
+     }
+     
+}
+ @media screen and (max-width:720px)
+{
+  
+     .main-container
+     {
+         flex-direction: column;
+     }
+      .left
+      {
+          width: 100vw;
+          clip-path: none;
+      }
+     .left > img
+     {
+        position: absolute;
+        top: 0%;
+        width: 100%;
+        height: 50%;
+     }
+     .right
+     {
+         width: 100vw;
+         height: 100vh;
+     }
+     .right .overlay
+     {
+         width: 90vw;
+         top: 45%;
+     }
+     .right .overlay h1
+     {
+         font-size:3rem;
+         top: 3%;
+     }
+     form h3:nth-child(1) ,h3:nth-child(3)
+     {
+         font-size: 3rem;
+     }
+     form h3:nth-child(5)
+     {
+         width: 70%;
+         font-size: 1.8rem;
+     }
+     form #Email , #password
+     {
+         font-size: 3rem;
+     }
+     form #btn
+     {
+         top: 62%;
+         font-size: 3rem;
+     }
+     form h3:nth-child(7)
+     {
+         font-size: 2.8rem;
+         left: 33%;
+     }
+     form > a:nth-child(8) img ,form > a:nth-child(10) img ,form > a:nth-child(12) img 
+     {
+         width: 12%;
+         height: 8%;
+     }
+     form h3:nth-child(9) a,form h3:nth-child(11) a,form h3:nth-child(13) a
+     {
+         font-size: 1.8rem;
+     }
+     
+} 
